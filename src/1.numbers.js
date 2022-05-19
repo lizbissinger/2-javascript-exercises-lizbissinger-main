@@ -8,7 +8,10 @@ function add (num1, num2) {
 
 //subtract: Should be able to subtract numbers
 function subtract (num1, num2) {
-  return ;
+
+  sub = num1 - num2;
+
+  return sub;
 }
 
 //multiply: Should be able to multiply with precision
