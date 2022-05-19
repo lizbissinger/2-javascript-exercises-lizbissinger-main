@@ -16,7 +16,10 @@ function subtract (num1, num2) {
 
 //multiply: Should be able to multiply with precision
 function multiply(num1, num2) {
-  return ;
+
+  product = num1 * num2;
+
+  return product;
 }
 
 //parseInt: should use parseInt correctly to convert strings to integer numbers
