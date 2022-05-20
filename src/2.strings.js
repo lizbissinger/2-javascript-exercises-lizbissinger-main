@@ -1,6 +1,11 @@
 //reverseString: you should be able to reverse a string
 // Example: "abc" => "cba"
 function reverseString(str) {
+
+  var splitString = str.split("");
+  var reverseArray = splitString.reverse();
+  var joinArray = reverseArray.join("");
+
   /**
    * can be achieved by combining: 
    *    1. string.prototype.split
@@ -9,7 +14,7 @@ function reverseString(str) {
    * 
    * Can even be done on one line
    */
-  return ;
+  return joinArray;
 }
 
 //capitalize: should return the input in all-caps
