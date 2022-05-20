@@ -4,7 +4,7 @@ function reverseString(str) {
 
   var splitString = str.split("");
   var reverseArray = splitString.reverse();
-  var joinArray = reverseArray.join("");
+  var reverseString = reverseArray.join("");
 
   /**
    * can be achieved by combining: 
@@ -14,22 +14,25 @@ function reverseString(str) {
    * 
    * Can even be done on one line
    */
-  return joinArray;
+  return reverseString;
 }
 
 //capitalize: should return the input in all-caps
 // Example: "this is a string" => "THIS IS A STRING"
 function capitalize(str) {
 
-  cap = str.toUpperCase();
+  capitalize = str.toUpperCase();
 
-  return cap;
+  return capitalize;
 }
 
 // splitString: should divide a string into substrings and return an array
 // Example: "Jane,Doe,21"  =>  [ "Jane", "Doe", "21" ]
 function splitString(str, splitAt = `,`) {
-  return ;
+
+  splitString = str.split(splitAt);
+
+  return splitString;
 }
 module.exports = {
   reverseString,
