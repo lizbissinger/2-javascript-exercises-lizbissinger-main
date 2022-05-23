@@ -28,11 +28,16 @@ function sum(arr) {
 // Filter: Should filter out all instances of a value from an array
 // Example: filtering 2 out of [1,2,3,5,6,2,4,2] should return [1,3,5,6,4]
 function filterOut(arr, item) {
-  return ;
+
+
+
+  return;
 }
 
 // Append: you should be able to add an item to the end of an array
 function append(arr, item) {
+
+ 
 
   return ;
 }
@@ -40,12 +45,19 @@ function append(arr, item) {
 // Truncate: you should be able to remove the last item of an array
 // hint: pop, slice, splice would all work. Pay attention to the return value in the docs
 function truncate(arr) {
-  return ;
+
+  var arr = [];
+  arr.pop();
+
+   return console.log(arr);
 }
 
 // Concat: you should be able to join together two arrays
 function concat(arr1, arr2) {
-  return ;
+
+  arr3 = arr1.concat(arr2);
+
+  return arr3;
 }
 
 // Insert: you should be able to add an item at the specified index of an array
@@ -59,7 +71,11 @@ function insert(arr, item, index) {
 // hint: use .map
 // Example: [1,2,4,5] => [1,4,16,25]
 function square(arr) {
-  return ;
+
+  return arr.map(function (arr){
+    return Math.pow(arr[i],2);
+  });
+
 }
 
 module.exports = {

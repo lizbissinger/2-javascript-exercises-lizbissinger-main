@@ -10,7 +10,20 @@
  */
 const personObject = {
 
+  first_Name: "Elizabeth",
+  last_Name: "Bissinger",
+  class_of: 9,
+  full_Name: function() {
+    return this.first_Name + " " + this.last_Name;
+
+  },
+  introduction: function(){
+    return "Welcome" + this.full_Name() + ". Your class is" + this.class_of;
+  }
+
 };
+
+console.log(personObject.introduction());
 
 module.exports = {
   personObject
