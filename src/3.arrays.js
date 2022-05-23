@@ -30,26 +30,24 @@ function sum(arr) {
 function filterOut(arr, item) {
 
 
-
-  return;
+  return arr.filter(x=> x!=item);
 }
 
 // Append: you should be able to add an item to the end of an array
 function append(arr, item) {
 
- 
+ arr.push(item);
 
-  return ;
+  return arr;
 }
 
 // Truncate: you should be able to remove the last item of an array
 // hint: pop, slice, splice would all work. Pay attention to the return value in the docs
 function truncate(arr) {
 
-  var arr = [];
   arr.pop();
 
-   return console.log(arr);
+   return;
 }
 
 // Concat: you should be able to join together two arrays
@@ -63,8 +61,8 @@ function concat(arr1, arr2) {
 // Insert: you should be able to add an item at the specified index of an array
 // hint: use splice and pay attention to the return value
 function insert(arr, item, index) {
-
-  return ;
+arr.splice(index,0,item);
+  return arr;
 }
 
 // Square: you should be able to square each number in an array
