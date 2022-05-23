@@ -15,7 +15,14 @@ function indexOf(arr, item) {
 // Sum: you should be able to sum the items of an array
 // Example: arr = [1,2,3]   =>  6
 function sum(arr) {
-  return ;
+
+  const arr = [];
+  const initialValue = 0;
+  const sumWithInitial = array1.reduce(
+    (previousValue, currentValue) => previousValue + currentValue,
+  );
+
+  return console.log(sumWithInitial);
 }
 
 // Filter: Should filter out all instances of a value from an array
